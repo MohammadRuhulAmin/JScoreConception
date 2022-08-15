@@ -26,12 +26,22 @@ In this section the code is executed one line at a time . It is also known as Th
 
 Execution context is created in two phases . 
 
-The Phases are : 
+The Phases are  : 
 1) First Phase  :  Cretion Phases / (Memory Creation Phase) 
 2) Second Phase :  Code Execution Phase  
 
 In First Phase The key value are assigned with undefined . The video on 4.23 are described .
 In second Phase / the code execution phase ,  the key value are removed undefined with real value . 
+
+When a function invoke from main , it creates another execution context . When function return a value , the 
+execution context deleted automatically . 
+If there are 100 function invoke , there are 100 excution context create. To handle these execution context
+inside v8 engine , there is a conception calls call stack. 
+Inside call stack the first element is the Global Execution Context.Then when the new function 
+invokes , the Execution Context created and push back to the Call stack . when the works done , 
+the Execution Context pop from the call stack . 
+
+This is how the call stack manage all the Execution Contexts . 
 
 
 
