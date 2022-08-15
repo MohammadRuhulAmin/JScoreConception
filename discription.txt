@@ -1,0 +1,11 @@
+Javascript Interview Questions & Answers.
+
+Question : 1
+Is javascript Single Threated / Multi threated ?
+==> Single Threated 
+
+Question  : 2
+Is javascript Asynchronous / Synchronous ? 
+==> Synchronous 
+
+
