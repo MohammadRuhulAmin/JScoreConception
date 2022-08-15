@@ -44,7 +44,13 @@ the Execution Context pop from the call stack .
 This is how the call stack manage all the Execution Contexts . 
 
 
-
+Call Stack is also known as : 
+    1) Execution Stack
+    2) Control Stack 
+    3) Runtime Stack 
+    4) Machine Stack 
+    5) Program Stack 
+    6) Execution Context Stack 
 
 
 ** Javascript is a Synchronous Single Threated Language .
