@@ -1,0 +1,11 @@
+What is undefined ? 
+=> It means taking memory for a variable . It has already allocated in memory component .  
+undefined is a special key  in javascript .
+
+console.log(a); // this will print : undefined 
+var a = 7;
+console.log(a); // this will print : 7 
+
+
+What is not defined ? 
+=> It has not allocated in memory 

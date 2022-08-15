@@ -1,5 +1,6 @@
 
 Reference : 
+
 1) https://www.youtube.com/watch?v=QCRpVw2KXf8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=6&ab_channel=AkshaySaini
 
 What is Window ? 
@@ -33,8 +34,3 @@ console.log(a)
 
 The shortest file in js is not writing any code inside js file . 
 Although not writing any code inside js file , it will create Global Execution Context & Window Object 
- 
-
-
-
-

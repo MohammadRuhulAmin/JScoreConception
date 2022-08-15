@@ -8,4 +8,16 @@ Question  : 2
 Is javascript Asynchronous / Synchronous ? 
 ==> Synchronous 
 
+Question : 3 
+Why javascript is a loosely type Language / weakly type language  ? 
+==> 
+    var x = "String "; // putting string inside x 
+        x = 123; // putting integer inside x 
+
+        but in other language , it is not possible 
+        like 
+        int x = 12;
+        x = "string"; // which is not possible ! 
+
+        that is why javascript is a loosely type language . 
 
