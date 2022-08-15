@@ -1,0 +1,40 @@
+
+Reference : 
+1) https://www.youtube.com/watch?v=QCRpVw2KXf8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=6&ab_channel=AkshaySaini
+
+What is Window ? 
+=> is a global object . When ever a javascript file is create , When it runs in browser the Global object 
+Window is create and the Global Execution Context is Created . 
+
+In Global level 
+
+    this === window 
+
+Means the type and the value is same . This object & Window object in type , value is same .
+
+If we declare a variable or function in global space , it will attach to the window . 
+
+
+like : 
+window{
+    a:12,
+    b:function(){
+
+    }
+}
+
+to access : the value or function 
+
+console.log(window.a)
+or 
+console.log(this.a)
+or 
+console.log(a) 
+
+The shortest file in js is not writing any code inside js file . 
+Although not writing any code inside js file , it will create Global Execution Context & Window Object 
+ 
+
+
+
+
