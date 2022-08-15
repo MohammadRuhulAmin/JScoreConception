@@ -21,3 +21,5 @@ Why javascript is a loosely type Language / weakly type language  ?
 
         that is why javascript is a loosely type language . 
 
+
+

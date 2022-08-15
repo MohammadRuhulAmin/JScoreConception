@@ -1,0 +1,33 @@
+
+Reference 
+1) https://www.youtube.com/watch?v=uH-tVP8MUs8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=8&ab_channel=AkshaySaini
+
+
+
+var val = 120;
+a();
+function a(){
+    b();
+    function b(){
+        c();
+        function c(){
+            d();
+            function d(){
+                console.log(val);
+            }
+            
+        }
+    }
+}
+
+in function d() first execution context of d() in the call stack will search 
+the value of val inside memory component . If it doesnot find the value of val 
+it will back to its lexical parent through the reference section of memory component.
+the javascript engine will search now inside the execution context of function c() in 
+memory component . If it does not get it will go to the lexical parent of c() which is function 
+b() . ...
+
+up to the end it will find the value of val inside global execution context  and 
+it will print the value . 
+This value finding process inside a function is called scope chaine. 
+
