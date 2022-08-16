@@ -1,0 +1,55 @@
+
+Reference 
+1) https://www.youtube.com/watch?v=BNC6slYCj50&t=351s
+
+
+What is Syntax Error ? 
+
+==> 
+    Ex : 1 
+    const a;
+    if we dont assign the value of a  in that statement 
+    it will show Syntax Error.
+/------------------------------
+    Ex : 2
+    let a = 10;
+    let a = 20;
+    it will show syntax error 
+
+What is Type Error ? 
+
+
+==> 
+    const a ;
+    a = 10;
+     /*
+        console will show type Error . 
+        if you declear const js engine expects you to 
+        asign & declear at one statement . 
+    */
+
+
+What is Reference Error ? 
+
+==> 
+
+When javascript tries to find out the variable from 
+Execution context memory component , but cannot access 
+it somehow .
+
+Ex : 1 
+console.log(a)
+let a = 100;
+
+/*
+    it will show reference error because of temporal dead zone . 
+    for temporal dead zone,  causes  reference error .
+*/
+
+
+
+what is your priority for delearing variable ? 
+
+==> 
+
+const > let > var 

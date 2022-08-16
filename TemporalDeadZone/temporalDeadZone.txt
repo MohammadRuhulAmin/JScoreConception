@@ -13,6 +13,7 @@ Actually let & const are temporally dead zone for the time being .
 What is Temporal Dead Zone ? 
 
 ==> 
+
 Temporal Dead Zone is the time Since when the let variable was
 hoisted till it is inicialized some value is called Temporal 
 Dead Zone. [ Variable hoisted to assign the value  ]
@@ -27,6 +28,7 @@ because of Temporal Dead Zone
 Can we access let or var with the help of window object ? 
 
 ==> 
+
 we can find all the objects decleard as var inside window object
 but we cannot get access decleared as let inside window object 
 it will show undefined . Not present on window object . 
