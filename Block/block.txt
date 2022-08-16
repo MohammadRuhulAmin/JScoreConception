@@ -1,0 +1,24 @@
+Reference 
+1) https://www.youtube.com/watch?v=lW_erSjyMeM&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=10
+
+
+What is Block ? 
+
+==> 
+
+{
+    // this is block 
+}
+
+Block is also known as Compount statement .
+It helps multiple javascript statement into one Group 
+
+
+{
+    var a = 10; // it will store inside window scope 
+    let b = 10; // it will store inside block scope 
+    const c = 10; // it will store inside block scope as well 
+    we can use var variable in any where as it is 
+    attached to window scope or object . 
+    but we cannot use let / const out side of the scope .   
+}
