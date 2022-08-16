@@ -1,0 +1,56 @@
+Reference
+1) https://www.youtube.com/watch?v=lW_erSjyMeM&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=10
+
+
+
+What is Shadowing in javascript ? 
+
+Ex : 1 
+var a = 100;
+
+{
+    var a = 10;
+    let b = 20;
+    const c = 100;
+    console.log(a) // it will print 10 , the value a of 10  is shadowing to value a of 100  
+    console.log(b)
+    console.log(c)
+}
+console.log(a) // it will also print 10 , Here both a are refering to same memory location . 
+
+//----------------------------------------------
+
+Ex : 2
+
+let b  = 100; //  this value stores in script scope 
+
+{
+    var a = 10; // this will stores in Global Scope 
+    let b = 20; // this value stores in block scope 
+    const c = 100;
+    console.log(a) // it will print 10 , the value a of 10  is shadowing to value a of 100  
+    console.log(b)
+    console.log(c)
+}
+
+console.log(a) //  it will print 100 for global scope 
+
+
+Lexical Scope 
+
+it will print the nearest value if the variables are decleered in different scope with same name 
+
+Example : 
+
+const a = 10;
+{
+    const a = 20;
+    {
+        const a = 30;
+        console.log(a) 
+    }
+    console.log(a)
+}
+console.log(a)
+
+javascript will print the nearest value with same name inside the scope 
