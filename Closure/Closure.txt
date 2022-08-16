@@ -1,0 +1,37 @@
+
+Reference 
+1) https://www.youtube.com/watch?v=qikxEIxsXco&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=12
+
+
+What is Closure ? 
+
+==> 
+    Function along with it's lexical scope form a closure . 
+
+    function x(){
+        var a = 7;
+        function y(){
+            console.log(a)
+        }
+        y();
+    }
+    x();
+
+    A closure is a function having access to the parent scope . 
+    It preserve the data from outside . 
+
+    A closure is an inner function that has access to 
+    the outer function's variables .
+
+
+    Where Closures Use ? 
+
+    ==> 
+     1) Module Design Pattern
+     2) Curring 
+     3) Functions Like Once
+     4) Memoize 
+     5) Maintaining State in async world
+     6) setTimeouts 
+     7) Iterators
+     8) and many more...
