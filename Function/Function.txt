@@ -1,0 +1,105 @@
+
+what is function Statement or Function Decleration ? 
+
+==> 
+    function a(){
+        console.log("This is called Function Statement");
+    }
+
+What is Called Function Expression ? 
+
+==>
+
+let a = function (){
+    console.log("This is called Callback function");
+}
+
+What is the difference between Function Expression & Function Hoisting ? 
+
+==> 
+    In Function decleration it is possible to do hoisting . 
+    but in Function expression it is not possible to make 
+    Function hoisting .
+
+    statement(); // it is valid  
+    expression(); // it is not valid .. it will throw an error !
+    function statement(){
+        console.log("This is function Statement can be hoisted ")
+    }
+
+    let expression = function(){
+        console.log("This is a function Statement cannot be hoisted ");
+    }
+
+What is anonimus Function ? 
+
+==> 
+    The function which has no name is called anonimus function . 
+    let x = function (){
+        console.log("Anonimus Function " );
+    }
+    To declear a function you cannot use an anonimus function . 
+    like : 
+    function (){
+        console.log("This will show an syntax error !");       
+    }
+
+What is Named Function Expression ? 
+
+==> 
+Example : 
+
+    let ans = function NamedFunctionExpress(){
+        console.log("This is named function Expression..!");
+    }
+    when an anonimus function has a name , its called Named Function Expression 
+
+    Even you can call it in this way : 
+    let ans = function NamedFunctionExpress(){
+        console.log(NamedFunctionExpress);
+    }
+    ans();
+
+What is the difference between function parameter & Arguments ? 
+
+==> 
+    let x = function myFunc(parameter1,parameter2,parameter3 .....){
+
+    }
+
+    x(argument1 , argument2, argument3);
+
+What is First class Function ? Or Why Javascript's Function are called First Class Function ? 
+or Why Functions are called First class Citizens in Javascript ?
+==>
+    1) Function can be refer as argument 
+    Ex : 
+        function OuterFunc(()=>{
+            console.log("Inner Function called")
+        },"Ruhul");
+
+    2) Function can be return from another Function 
+
+    Ex : 
+        function OuterFunction(){
+            return function InnerFunction(){
+                console.log("My Inner Function");
+            }
+        }
+        // To access inner function 
+        OuterFunction()();
+    
+    3) Function can assign to a variable 
+
+        let myFunc = function(){
+            console.log("This is My Func");
+        }
+        myFunc();
+        
+    For these reason javascrip's Functions are called First Class Function . 
+
+
+What is Arrow Function ? 
+
+==> 
+    Arrow function is introduced by ES6 .
