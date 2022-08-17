@@ -1,0 +1,5 @@
+
+Why do we need to remove Event Listeners ? 
+
+==>     
+    Event listeners are heavy and it takes too much memory . 

@@ -1,0 +1,78 @@
+
+Reference 
+1) https://www.youtube.com/watch?v=8zKuNo4ay8E
+
+
+
+Explaine Event Loop in javascript . 
+
+==> 
+    javascript is a single threated language . It has one call stack 
+    & it can only do one thing at a time . The Call stack is 
+    present inside the javascript engine . All the javascript 
+    statements are executed inside call stack . When ever
+    any javascript code is run a global executation context 
+    is created . Then each GEC is pushed inside the call stack . 
+     
+
+     Call stack is inside the javascript engine & the javascript 
+     engine is inside the big red box . and the box is called 
+     browser . 
+
+    The browser has its own local storage . There is a timer 
+    inside browser also.
+
+
+        The Browser's Web APIs are : 
+        1) setTimeOut() // is a timer 
+        2) DOM APIs  // DOM trees like document.getElementById('') etc 
+        3) fetch()   // it gives the connections to the externel servers 
+        4) localStorage // 
+        5) console
+        6) Location
+
+     These are not part of javascript . Actually these apis are 
+     belonging from browsers . They are not part of javascript. 
+     like console.log() is a  part of browser  not jS. 
+     
+     Browsers access these apis to javascript engine . Browsers 
+     give us the access to the javascript engine call stack to 
+     use all these or APIs. 
+
+     All these apis are attach to window object . 
+
+     If i want to access browser's API we have to access 
+     them through window key word . 
+     like window.setTimeout() 
+
+     to access local storage of browser 
+     window.localStorage()
+     to show message in the terminal 
+     window.console.log() 
+
+     To access these browser API , we do not need 
+     window key because all the APIs are inside 
+     window object or Global Scope . 
+
+     Example : 
+
+     console.log("Start") // this line will be executed by window.console API 
+     setTimeout(function cb(){ // 
+        console.log("Callback")
+     },5000)
+     console.log("End") // this line will be executed by window.console API
+
+
+    inside setTimeout(function cb(){}) , 
+    this function cb() is a call back function . 
+    setTimeout function  is executed by browser API 
+    timer . 
+    the function cannot be executed untill 5000 ms finished . In that time the cb(){} call back function 
+    gets registered inside browser . As soon as the timer get expired , the cb(){} function needs to go to 
+    the callback to execute . 
+    To shift from browser to call stack , the cb(){} call back function will be pushed into the callback Queue.
+
+
+
+
+
