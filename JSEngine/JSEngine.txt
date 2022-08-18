@@ -1,0 +1,105 @@
+
+Reference
+
+1) https://www.youtube.com/watch?v=2WJL19wDH68&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=19&ab_channel=AkshaySaini
+
+
+
+Why javascript Runs everywhere  ? 
+
+==> 
+    javascript can be run inside machine , watch , robot , browser , everywhere 
+    because of javascript run time environment.
+
+    inside javascript run time environment there is javascript runtime engine .
+
+
+What are the things that javascript runtime environment has ? 
+
+==> 
+    Javascript runtime environment  has : 
+    1)Javascript Engine (the heart of javascript runtime environment)
+    2) APIS (timer (setTimeout), console etc ... )
+    3) Event Loop 
+    4) Callback Queue 
+    5) microtask Queue 
+    
+    Every browser has javascript runtime environment. 
+
+
+Tell some different browsers javascript engine name . 
+
+
+==> 
+    mozila => spidermonkey engine (First javascript engine)
+    MicrosoftEdge => chakra engine 
+    GoogleChrome => V8 engine 
+    Node js => V8 engine 
+    DENO => V8 engine 
+
+    google V8 engine is written using C++ . javascript engine is a program .
+
+
+How javascript engine works executing javascript code ? 
+
+
+==> 
+    javascript engine takes the code as the input . 
+    then it works into three steps : 
+    
+    1) Parsing  => 2) Compilation => Execution 
+
+
+
+    1) Parsing : 
+        => it converts a statement into token using syntax parser . 
+        like : 
+        let x = 12;
+        [let] [x] [=] [12] all they are considered as token 
+        Then syntax parser converts it to AST 
+        
+
+        AST = > Abstract Syntax Tree 
+        
+        [https://astexplorer.net] 
+
+    2) Compilation : 
+        AST comes to a Compile part . 
+
+    3) Executation : 
+        Executation Phase is contained with two major phase 
+        a) Memory Heap (all the variables & functions are stored in memory) 
+        b) Call Stack
+
+
+What is Just intime compile Language ? and how does it works ? 
+
+
+==> 
+
+    It happens in compilation phase : 
+
+    javascript code can be run in both compiler & interpreter.
+    interpreter converts the javascript code into byte code  
+    and the compiler at the same time optimize the byte code . 
+
+    then they send it to the executation phase . 
+
+
+
+
+What is Mark & Sweep algorithm ? 
+
+==>
+    using this algorithm javascript engine collect the gurbage & clear from memory heap . 
+    the functions / variables  which are not executed for a long time are considered gurbage .
+
+
+V8 engine compiler & interpreter name ? 
+
+=>
+    Compiler = turbo fan 
+    Interpreter = ignition 
+
+
+

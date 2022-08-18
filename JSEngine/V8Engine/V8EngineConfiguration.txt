@@ -1,0 +1,14 @@
+How Does V8 engine works to compile a javascript code ? 
+
+
+==>
+From : Javascript Source Code : 
+ Step 1 : Javascript Source Code ( Human Readable Code )
+ Step 2 : Parse Javascript Source Code 
+ Step 3 : After Perse it converts to AST (Abstract Syntax tree)
+ Step 4 : Abstract Syntax tree sends to Interpreter (ignition) 
+ Step 5 : Interpreter (Ignition) converts AST to Byte code . 
+ Step 6 : Along with the Compiler Turbo Fan make optimized the machine code to byte code  which will be later executed 
+To : Byte Code 
+
+The Gurbage collector is Orinoko .. which use the mark & sweep algorithm to collect the gurbage . 
