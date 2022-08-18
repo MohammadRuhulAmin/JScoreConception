@@ -3,6 +3,9 @@ Reference
 1) https://www.youtube.com/watch?v=8zKuNo4ay8E
 
 
+** callback queue is also known as TASK QUEUE . 
+
+
 
 Explaine Event Loop in javascript . 
 
@@ -69,10 +72,106 @@ Explaine Event Loop in javascript .
     timer . 
     the function cannot be executed untill 5000 ms finished . In that time the cb(){} call back function 
     gets registered inside browser . As soon as the timer get expired , the cb(){} function needs to go to 
-    the callback to execute . 
-    To shift from browser to call stack , the cb(){} call back function will be pushed into the callback Queue.
+    the callback stack to execute . 
+    To shift from browser to call stack , the cb(){} call back function will be pushed into the callback Queue after
+    5000 ms . 
+
+    Now here comes the Event Loop . When a function / task stays inside callback queue , the 
+    event loop check wheather a function is exist inside of a queue or not . If it finds 
+    it will take the task / function to the call stack .  
+    Then call stack will execute the function by Execution context . 
+    
+    Event's Loop job is continiously monitoring the call stack as well as the callback queue . 
 
 
 
 
 
+
+
+    Why do we need callback queue ?
+
+    ==> 
+      
+      Example : 
+         console.log("Start")
+         document.getElementById("btn")
+               .addEventListener("click",function cb(){
+                  console.log("Call Back !")
+               })
+
+
+         In this example , 
+         First the Global execution context will be created inside call stack . 
+         Secondly the first line will be executed from code component . to print  
+         something javascript engine use borwser's console API . 
+
+         Then it will see dom element and a click event . as it has a click event 
+         it will not wait for this event to execute untill the user fire this event 
+         . it will go to the next line and print end as before mentioned .  
+
+         When the user click the event / button , the cb(){} call back function will be 
+         registered inside browser . After that it will send it to the call back queue . 
+         If the user click the button severtimes , the cb (){} function gets pushed 
+         several times too . 
+
+         When the call stack gets empty , the event loop then transfer the cb(){} from callback queue 
+         to call stack .   
+         The event loop monitors the callback queue and transfer the cb(){} function to the 
+         call stack & call stack creates local execution context to execute cb(){} functions 
+         statements . 
+
+
+
+
+       
+
+   How does fetch API works with event loop , execution context , call stack & callback queue ? 
+
+   ==>
+      fetch api use microtask queue not callback queue .  
+      the callback queue & microtask queue both are similler but microtask queue has the 
+      higher priority . 
+      What ever any callback function comes inside microtask queue , javascript engine 
+      will execute the microtask queue job before the callback queue . 
+      This monitoring is done by event loop . 
+
+      If there is a callback queue job & microtask queue job , event loop will first 
+      transfer the function inside microtask queue first to the call stack . 
+      When all the job done inside microtask queue , the event loop then transfer 
+      the callback queue job to the call stack . 
+
+
+      
+      Example : 
+      
+      console.log("START")
+      setTimeout(function cb(){
+         console.log("CB Set Timeout")
+      },5000)
+      fetch("https://api.netflix.com")
+         .then(function cbF(){
+            console.log("netflix")
+         })
+      console.log("END")
+
+
+
+ What type of callback function does microtask queue handle ? 
+
+ ==> 
+   
+   All the callback function which handles throught promises & mutation observers  , handle by the microtask 
+   queue . 
+   
+What type of callback functions does callback queue handle ? 
+
+==> 
+   setTimeout ( call back functions), dom api (event listeners ) . 
+
+
+
+What is  STARVATION ? 
+
+
+==> 
