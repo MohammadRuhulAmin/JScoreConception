@@ -4,6 +4,8 @@ Reference
 1) https://www.youtube.com/watch?v=2WJL19wDH68&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=19&ab_channel=AkshaySaini
 
 
+**Call stack is called the single  Thread in Javascript** 
+
 
 Why javascript Runs everywhere  ? 
 

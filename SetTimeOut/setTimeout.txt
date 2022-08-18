@@ -1,0 +1,22 @@
+
+
+
+console.log("START")
+setTimeout(()=>{
+    console.log("Call Back Function")
+},0)
+console.log("END")
+
+
+/----------------
+
+output : 
+
+START 
+END 
+Call Back Function 
+
+/----------------
+
+the call back function has to go to inside callback queue .. then the call stack.  
+it takes sometime to print .
