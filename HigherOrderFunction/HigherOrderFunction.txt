@@ -1,0 +1,25 @@
+What is callback function ? 
+
+==> 
+    The function which use as an argument of Higher order function is known as 
+    callback function . 
+    
+
+
+What is Higher Order Function ? 
+
+==> The Function Which takes function as argument or 
+    return anoter function known as Higher order function in javascript 
+
+    function HOF(){
+        return function innerFunc(){
+            consonle.log("Higher Order Function")
+        }
+    }
+
+    function innerFunction(){ // callback function 
+        console.log("Inner Function");
+    }
+    function HOF(innerFunction){ // higher Order function 
+        innerFunction();
+    }

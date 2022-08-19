@@ -1,6 +1,4 @@
 
-
-
 console.log("START")
 setTimeout(()=>{
     console.log("Call Back Function")
