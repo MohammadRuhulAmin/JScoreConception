@@ -5,7 +5,7 @@ Reference
 What is Lexical Envieonment  ? 
 
 
-==> Lexical Envieonment is the Local Memory along with Lexical environment of its parents . 
+==> Lexical Environment is the Local Memory along with Lexical environment of its parents . 
 
 function A(){
     function B(){
