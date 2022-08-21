@@ -27,7 +27,7 @@ In this section the code is executed one line at a time . It is also known as Th
 Execution context is created in two phases . 
 
 The Phases are  : 
-1) First Phase  :  Cretion Phases / (Memory Creation Phase) 
+1) First Phase  :  Creation Phases / (Memory Creation Phase) 
 2) Second Phase :  Code Execution Phase  
 
 In First Phase The key value are assigned with undefined . The video on 4.23 are described .
