@@ -1,0 +1,34 @@
+Reference 
+
+1) https://www.youtube.com/watch?v=DIzouoy13UM&ab_channel=AnaghTechnologiesInc.
+
+What is Garbage collection ? 
+
+==> 
+	Memory collection is done automatically.As long as any reference 
+exist , there will not be any cleaning memory / garbage collection . In a referene 
+of an object is missing  , that will be removed from memory automatically . 
+Example : 1
+let obj_1 = {name:"Someone"};
+let obj_2 = obj_1;
+obj_1 is assigned to obj_2 .
+memory will be available for obj_1 & obj_2 . Both the objects will share the 
+same memory location where the data is stored . 
+
+if we assign null in obj_1 then one reference is gone .
+obj_1 = null;
+but there is still one reference pointing to obj_2 . That is why Garbage colletor will not
+erase the data from memory . 
+
+when we write this statement : 
+obj_2 = null;
+now there is no references for that memory data and it will removed from the memory . 
+This is how the garbage collector manage memory . 
+Example : 2 
+let x = {name : "Someone"};
+let a = [];
+a.push(x);
+the data can be accessed using both x & a[0] . both are refering the same location to 
+access data . 
+now the value of x can still be accessed by using a[0] element . 
+So the garbage collector can remove the reference of x .
