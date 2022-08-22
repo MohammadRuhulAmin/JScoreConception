@@ -71,7 +71,7 @@ Explaine Event Loop in javascript .
     setTimeout function  is executed by browser API 
     timer . 
     the function cannot be executed untill 5000 ms finished . In that time the cb(){} call back function 
-    gets registered inside browser . As soon as the timer get expired , the cb(){} function needs to go to 
+    gets registered inside browser environment . As soon as the timer get expired , the cb(){} function needs to go to 
     the callback stack to execute . 
     To shift from browser to call stack , the cb(){} call back function will be pushed into the callback Queue after
     5000 ms . 
