@@ -1,0 +1,46 @@
+
+Examples : 
+
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+
+Give some examples of Events in javascript .
+
+==> 
+    onchange	--> An HTML element has been changed
+    onclick	    --> The user clicks an HTML element
+    onmouseover	--> The user moves the mouse over an HTML element
+    onmouseout	--> The user moves the mouse away from an HTML element
+    onkeydown	--> The user pushes a keyboard key
+    onload	    --> The browser has finished loading the page
+    ========================================================================
+
+
+When do we need Event handlers ? 
+
+==> 
+    Event handlers can be used to handle and verify user input, user actions, and browser actions
+        1)Things that should be done every time a page loads
+        Things that should be done when the page is closed
+    Action that should be performed when a user clicks a button
+    Content that should be verified when a user inputs data
+    And more ...
+    Many different methods can be used to let JavaScript work with events:
+
+    HTML event attributes can execute JavaScript code directly
+    HTML event attributes can call JavaScript functions
+    You can assign your own event handler functions to HTML elements
+    You can prevent events from being sent or being handled
+    And more ...
+
+    Event =>	Occurs when...                                          =>	Event Handler
+    -------------------------------------------------------
+    blur  =>	User removes input focus from form element              =>  onBlur
+    click =>	User clicks on form element or link 	                =>  onClick
+    change =>	User changes value of text, textarea, or select element =>	onChange
+    focus =>	User gives form element input focus                     =>	onFocus
+    load =>	    User loads the page in the Navigator                    =>	onLoad
+    mouseover =>	User moves mouse pointer over a link or anchor      =>	onMouseOver
+    select =>	User selects form element's input field                 =>	onSelect
+    submit =>	User submits a form                                     =>	onSubmit
+    unload =>	User exits the page                                     =>	onUnload
