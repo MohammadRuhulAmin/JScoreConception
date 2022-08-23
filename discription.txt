@@ -22,4 +22,9 @@ Why javascript is a loosely type Language / weakly type language  ?
         that is why javascript is a loosely type language . 
 
 
+Question : 4 
+What is String ? 
+
+==> 
+Normally, JavaScript strings are primitive values, created from literals (Fixed values )
 
