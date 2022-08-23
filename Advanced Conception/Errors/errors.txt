@@ -3,6 +3,24 @@ Reference
 1) https://www.youtube.com/watch?v=BNC6slYCj50&t=351s
 
 
+
+What are the errors in javascript ? 
+
+==> 
+
+Six different values can be returned by the error name property:
+
+Error Name	        Description
+EvalError =>	    An error has occurred in the eval() function
+RangeError => 	    A number "out of range" has occurred
+ReferenceError =>	An illegal reference has occurred
+SyntaxError =>	    A syntax error has occurred
+TypeError =>	    A type error has occurred
+URIError => 	    An error in encodeURI() has occurred
+
+To know more abut Errors : https://www.w3schools.com/js/js_errors.asp
+
+
 What is Syntax Error ? 
 
 ==> 
@@ -68,3 +86,5 @@ what is your priority for delearing variable ?
 ==> 
 
 const > let > var 
+
+
