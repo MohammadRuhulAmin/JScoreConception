@@ -1,0 +1,121 @@
+
+What is javascript variables ? 
+
+==> 
+
+
+    It's a good programming practice to declare all variables at the beginning of a script.
+    Variables are containers for storing values.
+    Javascript syntax defines two type of variables 
+        1.Fixed Values (Literals) 
+            
+            Ex : number can be written with or without decimals .
+            Ex : String can be written as single coute or double coute .
+            To implement the Literals : we use :=> 
+            
+                document.getElementById('demo').innerHTML = "My name is Ruhul";
+                document.getElementById('demo').innerHTML = 122.12;
+        
+        2.Variable Values (Variables) 
+            To define them we use let , var , const etc . 
+        There are 4 ways to declare js variables 
+         a)let b) var c) const d) nothing 
+
+What is undefined ? 
+
+==>
+    A variable declared without a value will have the value undefined.
+    Ex : 
+    let myname; 
+    // myname is assigned undefined by default .
+
+
+When to Use JavaScript var?
+
+==>
+
+    Always declare JavaScript variables with var,let, orconst.
+The var keyword is used in all JavaScript code from 1995 to 2015.
+The let and const keywords were added to JavaScript in 2015.
+If you want your code to run in older browser, you must use var.
+
+    We can redeclear var with same name as many time as we want . 
+    Like : 
+        var x = "Ruhul Amin";
+        var x = 120;
+        var x = 12.1;
+
+What is let in javascript ? 
+
+==>
+    Variables defined with let cannot be Redeclared.
+    Variables defined with let must be Declared before use.
+    Variables defined with let have Block Scope.
+    Variables defined with let cannot be redeclared.
+
+    let x = "John Doe";
+    let x = 0;
+    // SyntaxError: 'x' has already been declared
+
+    let , const is a block scoped variables 
+
+    {
+        let x = "something";
+    }
+    // x cannot be used here ! 
+
+    Using a let variable before it is declared will result in a ReferenceError:
+    console.log(myName);
+    let myName = "Ruhul";
+
+What is const ? 
+
+==> 
+    JavaScript const variables must be assigned a value when they are declared:
+    correct statement  : 
+        const myName = "Ruhul amin";
+    
+    incorrect statement : 
+        const myName;
+        myName = "Ruhul Amin";
+    // Uncaught SyntaxError: Missing initializer in const declaration
+
+
+
+    It does not define a constant value. It defines a constant reference to a value.
+
+Because of this you can NOT:
+
+    Reassign a constant value
+    Reassign a constant array
+    Reassign a constant object
+
+But you CAN:
+
+Change the elements of constant array
+    like : 
+        const array = ["ruhul","sakib","sajid"];
+        array[0] = "Aynun"; // okay 
+
+        but you cannot reassign the array : 
+    like : 
+        const array = ['a','b','c'];
+        array = ['d]; // not allowed ! 
+
+
+Change the properties of constant object
+
+    // You can create a const object:
+    const car = {type:"Fiat", model:"500", color:"white"};
+
+    // You can change a property:
+    car.color = "red";
+
+    // You can add a property:
+    car.owner = "Johnson";
+
+
+    but you cannot reassign the object .
+    
+    const car = {type:"Fiat", model:"500", color:"white"};
+    car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
