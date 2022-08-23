@@ -1,0 +1,33 @@
+
+
+What is template literals ? 
+
+== > 
+    also Known as : 
+        Template Literals
+        Template Strings
+        String Templates
+        Back-Tics Syntax
+
+What is interpolation in javascript ?
+
+==> 
+    when we use dynamic value inside template literals
+
+    example : 
+    let myName = 'Ruhul Amin';
+    let ansString = `Hellow This is ${myName}`;
+
+    Interpolation Syntax : ${variable_name} 
+
+What is the difference between == & === in javascript ? 
+
+==>
+    "==" -> checks only value 
+    "===" -> check both value & type 
+    
+    let x = "Ruhul Amin";
+    let y = new String("Ruhul Amin");
+    if(x === y)console.log("They are same");
+    else console.log("value & type is not matched !")
+

@@ -1,0 +1,24 @@
+
+
+What is NaN ? 
+
+==> 
+    NaN is a JavaScript reserved word indicating that a number is not a legal number.
+
+    example : 
+    let x = 12;
+    let y = "text";
+    console.log(x/y); // will reply Not a Number 
+
+    to check a value we can use javascript global function isNaN();
+    console.log(isNun(x/y));
+
+
+
+What will be the output of 100/"10" ? 
+
+==> 
+    ans : 10 
+
+
+
