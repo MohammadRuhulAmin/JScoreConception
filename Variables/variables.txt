@@ -119,3 +119,17 @@ Change the properties of constant object
     
     const car = {type:"Fiat", model:"500", color:"white"};
     car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
+
+
+Why javascript types are dynamic ? 
+
+==> 
+    JavaScript Types are Dynamic
+    JavaScript has dynamic types. This means that the same variable can be used to hold different data types.
+
+
+When function invokes ? 
+==>
+     1.When an event occurs (when a user clicks a button)
+     2.When it is invoked (called) from JavaScript code
+     3.Automatically (self invoked)
