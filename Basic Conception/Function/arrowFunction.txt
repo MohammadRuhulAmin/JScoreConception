@@ -1,0 +1,65 @@
+
+What is the difference between function and arrow function ? 
+
+==> 
+
+ 1) Arguments object are not available in arrow function . 
+    Ex : 
+        // valid 
+        const sum = function (x,y){
+            console.log(arguments)
+        }
+        //invalid
+        const sum = (x,y)=>{
+            console.log(arguments) // show an error
+        }
+
+2)  Inside arrow function we cannot create constructor 
+    Ex : 
+        function Car(name){
+            this.brand = name;
+        }
+
+        const maria = new Car("maria");
+        console.log(maria.brand);
+
+        
+        function Car(firstName , lastName){
+            this.brandFName = firstName;
+            this.brandLName = lastName;
+            this.fullName = this.brandFName + " " + this.brandLName;
+        }
+
+        const carFName = new Car("Maruti", "Shuzuki")
+        console.log(carFName.fullName)
+
+        but making constructor is not possible in arrow function.
+
+
+3) arrow function donot have their own this 
+
+    Ex: 
+    const userInfo = {
+        name : "Ruhul Amin",
+        email : "alfa@gmail.com"
+        detail_1: ()=>{
+            return this.name + " " + this.email;
+        },
+        detail_2 : function(){
+            return this.name + " " + this.email;
+        }
+    }
+
+    const detailInfo_1 = userInfo.detail_1;
+    const detailInfo_2 = userInfo.detail_2;
+    console.log(detailInfo_1) // will print value 
+    console.log(detailInfo_2) // wont print anything 
+
+4) Implecetly return by the fat arrow function 
+
+function maxk(){
+    100; // return undefined 
+}
+
+let x = ()=>100; // return 100 
+
