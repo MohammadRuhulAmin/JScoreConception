@@ -86,6 +86,7 @@ console.log(detalsAddress_2)
 /**
  * bind method is none but call function it just make it as function
  */
+
 console.log("Using Bind Method : ")
 let detalsAddress_3 = AddressInfo.bind(addressInf,"Rajshahi","Dhaka")
 console.log(detalsAddress_3())
