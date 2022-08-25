@@ -15,3 +15,64 @@ Arrays are always objects
 Functions are always objects
 Objects are always objects
 All JavaScript values, except primitives, are objects.
+
+
+What is Object Literal ? 
+
+==> 
+    object literal is nothing but the represent of object : 
+
+    const Object = {
+        name : "Ruhul",
+        address : "Dhaka",
+        code : "1221"
+    }
+    const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+    using new key word  :
+        const person = new Object(); 
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "blue";
+    
+    javascript objects are mutable.
+
+    How to delete an object element ? 
+
+    ==> 
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue"
+    };
+
+    delete person["age"];
+
+    How to get the values of an Object ?
+
+    ==> 
+     const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    };
+
+    console.log(Object.values(person));
+
+    How to stringify an object ? 
+    == >
+
+    const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    };
+
+    let myString = JSON.stringify(person);
+
+    const arr = ["John", "Peter", "Sally", "Jane"];
+
+    let myString = JSON.stringify(arr);
+    document.getElementById("demo").innerHTML = myString;

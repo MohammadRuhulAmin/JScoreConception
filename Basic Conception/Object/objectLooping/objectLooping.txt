@@ -1,0 +1,14 @@
+
+Is it possible to loop inside an object ? if then how ? 
+
+=> Yes it is possible .
+
+const person = {
+  fname:" John",
+  lname:" Doe",
+  age: 25
+};
+
+for (let x in person) {
+  txt += person[x];
+}
