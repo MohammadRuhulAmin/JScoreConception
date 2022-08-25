@@ -3,7 +3,10 @@
  * https://www.youtube.com/watch?v=75W8UPQ5l7k&ab_channel=AkshaySaini
  */
 
-
+ /**
+  * More on 
+  * https://betterprogramming.pub/when-to-use-bind-call-and-apply-in-javascript-1ae9d7fa66d5
+  */
 
 const Info = {
     firstName : "Ruhul",
@@ -90,3 +93,18 @@ console.log(detalsAddress_2)
 console.log("Using Bind Method : ")
 let detalsAddress_3 = AddressInfo.bind(addressInf,"Rajshahi","Dhaka")
 console.log(detalsAddress_3())
+
+
+const person1 = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  
+  const person2 = {
+    firstName:"John",
+    lastName: "Doe",
+  }
+  
+  // Return "John Doe":
+  person1.fullName.call(person2);

@@ -1,4 +1,9 @@
 
+
+What is event ? & What is listener in javascript ? 
+
+==> 
+
 Examples : 
 
 <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
