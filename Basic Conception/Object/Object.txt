@@ -76,3 +76,64 @@ What is Object Literal ?
 
     let myString = JSON.stringify(arr);
     document.getElementById("demo").innerHTML = myString;
+
+
+What is get & set in javascript ? 
+
+==>
+    They are object accessories 
+    const person = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "",
+    set lang(lang) {
+        this.language = lang;
+    }
+};
+
+console.log(person.lang())
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "en",
+  get lang() {
+    return this.language;
+  }
+};
+console.log(person.lang())
+
+What is the difference to use accessories and function ? 
+
+==> 
+    JavaScript can secure better data quality when using getters and setters.
+
+
+
+What is the use of Object.defineProperty() ? 
+
+==> 
+    Object.defineProperty(object_name,property_name,{
+        
+        //---- operations 
+    })
+
+
+
+    https://www.youtube.com/watch?v=1bdLPRzRACM&ab_channel=LeelaWebDev
+
+    var person = {
+        name : "Ruhul Amin"
+    };
+
+    Object.defineProperty(person,'id',{
+        value:1,
+    })
+
+    person.value = 12;
+    console.log(person.value) // it will never be updated 
+    unless we define property ->  write 
+    
+    
+
+

@@ -85,7 +85,6 @@ console.log("Using Bind Method : ");
 let detalsAddress_2 = AddressInfo.apply(addressInf,["Dhaka","Rajshahi"]);
 console.log(detalsAddress_2)
 
-
 /**
  * bind method is none but call function it just make it as function
  */

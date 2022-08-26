@@ -29,3 +29,29 @@ function checkObject(){
     }
 }
 checkObject();
+
+
+// using set accessories
+const personx = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "",
+    set lang(lang) {
+      this.language = lang;
+    }
+  };
+  
+  console.log(personx.language)
+
+
+  // using get accessories
+  const persony = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "en",
+    get lang() {
+      return this.language;
+    }
+  };
+  
+
