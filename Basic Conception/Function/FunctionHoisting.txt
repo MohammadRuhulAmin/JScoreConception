@@ -1,0 +1,37 @@
+
+
+What is function hoisting ? 
+
+==> 
+myFunction(5);
+
+function myFunction(y) {
+  return y * y;
+}
+
+Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.
+Hoisting applies to variable declarations and to function declarations.
+Because of this, JavaScript functions can be called before they are declared
+
+
+How to get the arguments of the function  ? 
+
+==> 
+function myFunction(a, b) {
+  return arguments.length;
+}
+
+What is this key work ? 
+
+==> 
+
+
+In JavaScript, the this keyword refers to an object.
+Which object depends on how this is being invoked (used or called).
+The this keyword refers to different objects depending on how it is used:
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
