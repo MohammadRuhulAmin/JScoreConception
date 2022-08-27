@@ -101,6 +101,7 @@ const person = {
     return this.language;
   }
 };
+
 console.log(person.lang())
 
 What is the difference to use accessories and function ? 

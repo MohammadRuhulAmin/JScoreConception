@@ -1,0 +1,11 @@
+
+
+What is javascript Promise Object  ? What are 3 parts of promise ? 
+
+==> 
+1) Pending 
+    While a promise object is "Pending" the result is undefined 
+2) Fullfilled
+    When a promise object is "Fullfilled" the result is value 
+3) Rejected
+    When a promise object is "Rejected" the result is an error object 
