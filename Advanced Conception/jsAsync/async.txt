@@ -1,0 +1,8 @@
+
+
+When to use callback function ? 
+
+==> 
+
+    Where callbacks really shine are in asynchronous functions, 
+where one function has to wait for another function (like waiting for a file to load).
