@@ -135,5 +135,6 @@ What is the use of Object.defineProperty() ?
     unless we define property ->  write 
     
     
+    
 
 

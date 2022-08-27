@@ -1,0 +1,41 @@
+
+Describe object prototype . 
+
+==> 
+https://www.w3schools.com/js/js_object_es5.asp
+
+
+What is object prototype ? 
+
+==> 
+All JavaScript objects inherit properties and methods from a prototype.
+The JavaScript prototype property allows you to add new properties to object constructors:
+
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+
+
+The JavaScript prototype property also allows you to add new methods to objects constructors:
+
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+
+What is the use of instanceof key word ? 
+
+==> 
+instanceof
